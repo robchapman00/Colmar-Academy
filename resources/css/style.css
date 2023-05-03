@@ -1,0 +1,110 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'work sans';
+    font-size: 3rem;
+    color: #323333; 
+}
+
+h2 {
+    font-family: 'work sans';
+    font-size: 2rem;
+    color: #323333;
+}
+
+h3 {
+    font-family: 'work sans';
+    font-size: 1.5rem; 
+    color: #323333;
+}
+
+p {
+    font-family: lato;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-bottom: solid 1px #ffffff;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+header .content img {
+    height: 2.5rem;
+}
+
+header .content p {
+    font-family: 'Playfair Display SC';
+    font-size: 2rem;
+    color: #915A13;
+    margin-right: auto;
+}
+
+header .content span {
+    font-family: Oxygen;
+    color: #707C73;
+    padding-left: 0.5rem;
+}
+
+header .desktop ul {
+    display:flex;
+    font-size: 1.2rem;
+    font-family: lato;
+    font-weight: bold;
+}
+
+header .desktop li {
+    margin-left: 2rem;
+}
+
+header .desktop li a {
+    transition: color 200ms linear 200ms;
+}
+
+header .desktop li a:hover {
+    color: #707C73;
+}
+
+header .mobile {
+    display: none;
+}
+
+/* First Container */
+
+.container-1 {
+    background-color: #E6E3DE;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 6rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+
+.pic-1 {
+    width: 60%;
+    height: auto;
+    padding-right: 1.5rem;
+}
+
+.pic-1 img {
+   max-width: 100%;
+   height: auto;
+}
+
+.cta-content {
+    
+}
