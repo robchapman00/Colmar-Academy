@@ -2,21 +2,35 @@ body {
     font-size: 16px;
 }
 
+/* to help while creating page */
+div {
+    border: 2px solid black;
+}
+
+img {
+    border: 2px solid black;
+}
+
+h1, h2, h3, h4, button {
+    border: 2px solid black;
+} 
+
 h1 {
     font-family: 'work sans';
-    font-size: 3rem;
+    font-size: 3.3rem;
+    font-weight: bold;
     color: #323333; 
 }
 
 h2 {
     font-family: 'work sans';
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #323333;
 }
 
 h3 {
     font-family: 'work sans';
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     color: #323333;
 }
 
@@ -58,7 +72,7 @@ header .content span {
 }
 
 header .desktop ul {
-    display:flex;
+    display: flex;
     font-size: 1.2rem;
     font-family: lato;
     font-weight: bold;
@@ -90,21 +104,156 @@ header .mobile {
     top: 6rem;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    
 }
 
 .pic-1 {
-    width: 60%;
-    height: auto;
-    padding-right: 1.5rem;
+    width: 55%;
+    min-width: 27.63rem;
 }
 
 .pic-1 img {
-   max-width: 100%;
    height: auto;
+   max-width: 100%;
+  
 }
 
 .cta-content {
+    width: 36%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.cta-content h1 { 
+    padding-bottom: 1.5rem;
+}
+
+.cta-content h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.button {
+    width: 100%;
+    background-color: #707C73;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Containter 1 and header For Tablets */ 
+
+@media only screen and (max-width: 1110px) {
+    .cta-content h1 { 
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
     
+    .cta-content h3 {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+    }
+    
+    .button {
+        width: 100%;
+        background-color: #707C73;
+        background-size: cover;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+} 
+
+/* For Mobile Container 1 and header */
+
+@media only screen and (max-width: 1000px) {
+    .container-1 {
+        background-color: #E6E3DE;
+        padding: 2rem 1.5rem;
+        width: 100%;
+        position: relative;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic-1 {
+        width: 55%;
+        min-width: 27.63rem;
+        margin: 0 auto;
+    }
+
+    .cta-content {
+        width: 55%;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    
+    .button {
+        width: 100%;
+        background-color: #707C73;
+        background-size: cover;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center; 
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-right: 3.5rem;
+        
+    }
+
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+    }
+
+    header .mobile ul {
+        display: flex;
+    }
+
+    header .mobile li {
+        margin-left: 3rem;
+    }    
+
+}
+
+@media only screen and (max-width: 660px) {
+    header .content p{
+        display: none;
+    }
+
+    header .content img {
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .pic-1 {
+        width: 70%;
+        min-width: 20.63rem;
+        margin: 0 auto;
+    }
+
+    .cta-content {
+        width: 90%;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
