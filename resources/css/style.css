@@ -254,6 +254,10 @@ header .mobile {
 
 /* Container 2 */
 
+.mobile-news-content {
+    display: none;
+}
+
 .container-2 {
     display: flex;
     padding: 2rem 1.5rem;
@@ -367,9 +371,6 @@ header .mobile {
         margin-top: 1.5rem;
     }
 
-    #guest-content {
-        max-width: 53%;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -387,41 +388,114 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
     .news-content {
-        width: 100%;
+        display: none;
+    }
+
+    .mobile-news-content {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
     }
 
-    #orin-pic, #campus-pic, #guest-pic {
-        min-width: 45%;
-        margin-right: 1.5rem;
+    .orientation, .our-campus, .guest-lecture {
+        display: flex;
+        flex-direction: column;
     }
-}
 
-@media only screen and (max-width: 660px) {
     #orin-pic, #campus-pic, #guest-pic {
-        width: 50%;
-        margin-right: 1.5rem;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     #orin-content, #campus-content, #guest-content {
-        width: 45%;
+        width: 100%;
+    }
+}
+
+/* Container 3 */
+
+.mobile-courses {
+    display: none;
+}
+
+.container-3 {
+    background-color: #E6E3DE;
+    width: 100%;
+    position: relative;
+    top: 6rem;
+    padding: 2rem 3.5rem;    
+}
+
+.course-heading {
+    width: 100%;
+}
+
+.course-heading h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.courses, .courses-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+} 
+
+.engineering, .comp-art, .design, .data, .business, .marketing {
+    margin: 1rem; 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 1;
+}
+
+#engineering-pic, #art-pic, #design-pic, #data-pic, #business-pic, #marketing-pic {
+    height: auto;
+}
+
+#engineering-pic img, #art-pic img, #design-pic img, #data-pic img, #business-pic img, #marketing-pic img {
+    width: 100%;
+}
+
+#engineering-content, #art-content, #design-content, #data-content, #business-content, #marketing-content {
+    padding: 1rem 1rem 1.5rem 1rem;   
+}
+
+#engineering-content h2, #art-content h2, #design-content h2, #data-content h2, #business-content h2, #marketing-content h2 {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#engineering-content p, #art-content p, #design-content p, #data-content p, #business-content p, #marketing-content p {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 950px) {
+    .courses, .courses-2 {
+        display: none;
     }
 
-    #orin-content h2, #campus-content h2, #guest-content h2 {
-        font-size: 1.5rem; 
-        font-weight: bold;
+    .container-3 {
+        background-color: #E6E3DE;
+        width: 100%;
+        position: relative;
+        top: 6rem;
+        padding: 2rem 1.5rem;   
     }
 
-    #orin-content p, #campus-content p, #guest-content p {
-        font-size: 1rem; 
-        padding: 1rem 0;
+    .mobile-courses {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
     }
-    
-    #orin-content a, #campus-content a, #guest-content a {
-        font-size: 0.8rem;
-        color: #707C73;
-        font-weight: bold;
+
+    #eng-mobile, #art-mobile, #design-mobile, #data-mobile, #business-mobile, #marketing-mobile {
+        background-color: white;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        width: 100%;
     }
 }
